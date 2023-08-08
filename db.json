@@ -1,14 +1,272 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+   "data":{
+      "restaurants":[
+         {
+            "id":"1",
+            "name":"Healthy Greens",
+            "categories":[
+               "Vegan",
+               "Organic"
+            ],
+            "rating":4.5,
+            "deliveryTime":"30-40 min",
+            "image":"https://example.com/images/1.jpg",
+            "location":"123 Healthy St, Food City",
+            "isExpensive":false,
+            "topDishes":[
+               {
+                  "name":"Quinoa Salad",
+                  "price":12.99,
+                  "image":"https://example.com/dishes/1.jpg",
+                  "description":"Delicious and nutritious quinoa salad with fresh veggies."
+               },
+               {
+                  "name":"Veggie Stir Fry",
+                  "price":11.99,
+                  "image":"https://example.com/dishes/2.jpg",
+                  "description":"Colorful vegetables stir-fried with tofu and sauce."
+               },
+               {
+                  "name":"Green Smoothie",
+                  "price":6.99,
+                  "image":"https://example.com/dishes/3.jpg",
+                  "description":"Refreshing blend of spinach, banana, pineapple, and almond milk."
+               }
+            ]
+         },
+         {
+            "id":"2",
+            "name":"Fit Feast",
+            "categories":[
+               "Low Carb",
+               "Gluten Free"
+            ],
+            "rating":4.3,
+            "deliveryTime":"20-30 min",
+            "image":"https://example.com/images/2.jpg",
+            "location":"456 Lean Ln, Food City",
+            "isExpensive":true,
+            "topDishes":[
+               {
+                  "name":"Chicken Avocado Salad",
+                  "price":14.99,
+                  "image":"https://example.com/dishes/4.jpg",
+                  "description":"Grilled chicken, fresh avocado, cherry tomatoes on a bed of greens."
+               },
+               {
+                  "name":"Zucchini Noodles",
+                  "price":13.99,
+                  "image":"https://example.com/dishes/5.jpg",
+                  "description":"Zucchini noodles sautéed with cherry tomatoes, garlic, and olive oil."
+               },
+               {
+                  "name":"Keto Smoothie",
+                  "price":7.99,
+                  "image":"https://example.com/dishes/6.jpg",
+                  "description":"Creamy smoothie with avocado, spinach, protein powder, and almond milk."
+               }
+            ]
+         },
+         {
+            "id":"3",
+            "name":"Lean & Clean",
+            "categories":[
+               "Paleo",
+               "Organic"
+            ],
+            "rating":4.6,
+            "deliveryTime":"25-35 min",
+            "image":"https://example.com/images/3.jpg",
+            "location":"789 Clean Ave, Food City",
+            "isExpensive":true,
+            "topDishes":[
+               {
+                  "name":"Grilled Salmon",
+                  "price":17.99,
+                  "image":"https://example.com/dishes/7.jpg",
+                  "description":"Grilled salmon with a lemon herb butter sauce."
+               },
+               {
+                  "name":"Roasted Vegetables",
+                  "price":11.99,
+                  "image":"https://example.com/dishes/8.jpg",
+                  "description":"Seasonal vegetables roasted to perfection."
+               },
+               {
+                  "name":"Paleo Smoothie",
+                  "price":7.99,
+                  "image":"https://example.com/dishes/9.jpg",
+                  "description":"Protein-packed smoothie with banana, almond butter, and coconut milk."
+               }
+            ]
+         },
+         {
+            "id":"4",
+            "name":"Veggie Delight",
+            "categories":[
+               "Vegan",
+               "Vegetarian"
+            ],
+            "rating":4.2,
+            "deliveryTime":"15-25 min",
+            "image":"https://example.com/images/4.jpg",
+            "location":"321 Veggie Blvd, Food City",
+            "isExpensive":false,
+            "topDishes":[
+               {
+                  "name":"Veggie Burger",
+                  "price":9.99,
+                  "image":"https://example.com/dishes/10.jpg",
+                  "description":"Hearty veggie burger with a side of sweet potato fries."
+               },
+               {
+                  "name":"Vegetable Curry",
+                  "price":11.99,
+                  "image":"https://example.com/dishes/11.jpg",
+                  "description":"Spicy vegetable curry served with brown rice."
+               },
+               {
+                  "name":"Fruit Salad",
+                  "price":6.99,
+                  "image":"https://example.com/dishes/12.jpg",
+                  "description":"Freshly cut fruits with a hint of mint."
+               }
+            ]
+         },
+         {
+            "id":"5",
+            "name":"Quick & Fresh",
+            "categories":[
+               "Salad",
+               "Wrap",
+               "Soup"
+            ],
+            "rating":4.4,
+            "deliveryTime":"10-20 min",
+            "image":"https://example.com/images/5.jpg",
+            "location":"567 Fresh St, Food City",
+            "isExpensive":false,
+            "topDishes":[
+               {
+                  "name":"Chicken Caesar Salad",
+                  "price":10.99,
+                  "image":"https://example.com/dishes/13.jpg",
+                  "description":"Classic Caesar salad with grilled chicken, parmesan, and croutons."
+               },
+               {
+                  "name":"Veggie Wrap",
+                  "price":9.99,
+                  "image":"https://example.com/dishes/14.jpg",
+                  "description":"Fresh vegetables and hummus wrapped in a whole grain tortilla."
+               },
+               {
+                  "name":"Tomato Soup",
+                  "price":8.99,
+                  "image":"https://example.com/dishes/15.jpg",
+                  "description":"Creamy tomato soup served with a side of artisan bread."
+               }
+            ]
+         },
+         {
+            "id":"6",
+            "name":"Green Deli",
+            "categories":[
+               "Deli",
+               "Salad",
+               "Sandwich"
+            ],
+            "rating":4.1,
+            "deliveryTime":"15-25 min",
+            "image":"https://example.com/images/6.jpg",
+            "location":"890 Deli Dr, Food City",
+            "isExpensive":false,
+            "topDishes":[
+               {
+                  "name":"Turkey Sandwich",
+                  "price":9.99,
+                  "image":"https://example.com/dishes/16.jpg",
+                  "description":"Turkey and swiss on whole grain bread with lettuce, tomato, and mayo."
+               },
+               {
+                  "name":"Chef Salad",
+                  "price":11.99,
+                  "image":"https://example.com/dishes/17.jpg",
+                  "description":"Mixed greens with turkey, ham, swiss, cheddar, tomato, and hard boiled egg."
+               },
+               {
+                  "name":"Veggie Deli Sandwich",
+                  "price":9.99,
+                  "image":"https://example.com/dishes/18.jpg",
+                  "description":"Fresh veggies and avocado with cream cheese on whole grain bread."
+               }
+            ]
+         },
+         {
+            "id":"7",
+            "name":"Healthy Harvest",
+            "categories":[
+               "Farm-to-table",
+               "Organic"
+            ],
+            "rating":4.7,
+            "deliveryTime":"40-50 min",
+            "image":"https://example.com/images/7.jpg",
+            "location":"135 Harvest Rd, Food City",
+            "isExpensive":true,
+            "topDishes":[
+               {
+                  "name":"Grilled Chicken and Vegetables",
+                  "price":15.99,
+                  "image":"https://example.com/dishes/19.jpg",
+                  "description":"Farm fresh chicken and vegetables grilled to perfection."
+               },
+               {
+                  "name":"Farmers Market Salad",
+                  "price":13.99,
+                  "image":"https://example.com/dishes/20.jpg",
+                  "description":"Fresh produce from the local farmers market on a bed of mixed greens."
+               },
+               {
+                  "name":"Roasted Beet and Quinoa Salad",
+                  "price":14.99,
+                  "image":"https://example.com/dishes/21.jpg",
+                  "description":"Roasted beets and fluffy quinoa served on a bed of arugula with a lemon vinaigrette."
+               }
+            ]
+         },
+         {
+            "id":"8",
+            "name":"Fruit Fusion",
+            "categories":[
+               "Juice Bar",
+               "Vegan"
+            ],
+            "rating":4.3,
+            "deliveryTime":"10-20 min",
+            "image":"https://example.com/images/8.jpg",
+            "location":"246 Fusion Ln, Food City",
+            "isExpensive":false,
+            "topDishes":[
+               {
+                  "name":"Acai Bowl",
+                  "price":8.99,
+                  "image":"https://example.com/dishes/22.jpg",
+                  "description":"Acai blended with banana and topped with granola, fresh fruit, and honey."
+               },
+               {
+                  "name":"Green Juice",
+                  "price":6.99,
+                  "image":"https://example.com/dishes/23.jpg",
+                  "description":"A refreshing juice made from kale, spinach, cucumber, apple, and lemon."
+               },
+               {
+                  "name":"Berry Smoothie",
+                  "price":6.99,
+                  "image":"https://example.com/dishes/24.jpg",
+                  "description":"A creamy smoothie made with mixed berries, banana, and almond milk."
+               }
+            ]
+         }
+      ]
+   }
 }
